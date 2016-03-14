@@ -1,0 +1,6 @@
+Searching up the problem name, Mozaiq, we find an online steganography tool where we hide messages within images.
+The hint in the problem tells us that there is no password, so we can just input the picture into the web form at
+http://mozaiq.org/decrypt.
+
+Decrypting the message without a password gives us the flag.
+flag{0BSCUR3_InN0}
