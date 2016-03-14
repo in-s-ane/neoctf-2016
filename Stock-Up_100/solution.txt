@@ -1,0 +1,8 @@
+The problem description says John, who is one of the NeoCTF organizers. Another hint tell us that looks
+can be deceiving, which brings us to his photo on the about page. Running
+
+    strings u4PJb1Z.jpg | grep flag
+
+gives us the flag.
+
+flag{rec0nedm8}
