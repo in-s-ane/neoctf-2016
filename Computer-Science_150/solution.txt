@@ -1,0 +1,10 @@
+The name of the school that's hosting the competition is Brecksville Broadview Heights High School
+Since https://ratemyteachers.com is the *most* reliable source for finding ratings of a teacher on the internet,
+we can go find the computer science teachers who teach at the school.
+http://www.ratemyteachers.com/brecksville-broadview-heights-high-school/14788-s/computer-science
+
+Of the two computer science teachers, one of them has a three star rating, so let's look there.
+Sure enough, under Steven Brule's profile, there is a rating containing the flag.
+http://www.ratemyteachers.com/steven-brule/4709009-t
+
+flag{drumpster_shrimp}
