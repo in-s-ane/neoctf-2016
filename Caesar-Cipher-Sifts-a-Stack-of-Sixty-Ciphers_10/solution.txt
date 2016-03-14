@@ -1,0 +1,4 @@
+The encoded text is likely to be flag{??????}, which would be a rot-3 shift away.
+Or you could just brute force the shift.
+
+flag{t00_easy}
