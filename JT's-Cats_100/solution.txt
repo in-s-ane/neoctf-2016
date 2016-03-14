@@ -1,0 +1,3 @@
+Follow the tcp stream of the dump and get the flag.
+
+flag{i_love_my_net_cat}
