@@ -1,0 +1,3 @@
+Click the button and view the console for the flag.
+
+flag{D@t_3p1c_C0ns01e}

@@ -1,0 +1,19 @@
+Looking at the function being called upon receiving data, we can tell right away that it is converting invalid
+hexadecimal into valid hexadecimal. All we really need to do is view the converted string and decode the hex to get the flag.
+
+    var xm = new XMLHttpRequest();
+
+    xm.onreadystatechange = function() {
+        function convert(st) {
+            return (st + '')
+            .replace(/[a-z]/gi, function(s) {
+            return String.fromCharCode(s.charCodeAt(0) + (s.toLowerCase() < 'n' ? 13 : -13));
+            });
+        }
+        console.log(convert(xm.responseText));
+    }
+    xm.open("GET","msg.php",true);
+    xm.send();
+
+The end of the decoded hex contains the flag:
+flag{wa1t1ng_f0r_th3_r3st}

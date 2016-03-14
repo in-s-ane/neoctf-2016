@@ -1,0 +1,6 @@
+Clicking the button seems to redirect us to the same page but with a get parameter in the url.
+http://162.243.0.171/Bull.php?Get_Flag=false
+
+Change Get_Flag to true to view the flag.
+
+flag{G0t_D@T_F1@g}
