@@ -1,0 +1,5 @@
+Viewing the file's spectrogram in audacity yielded something that looked a lot like a flag, but was
+too fuzzy and unreadable. Looking up a tool for viewing spectrograms, I found spek. Using spek, I was able to easily
+view the flag.
+
+flag{aph3x_t}
