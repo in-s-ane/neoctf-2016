@@ -1,0 +1,6 @@
+If we change one of the log entries to *, we can view all of the logs, which means
+that we can arbitrarily execute commands. To do this, all we need to do is change one
+of the log values to "*; ls", which will list the contents of the current directory.
+While this didn't actually list the contents of the directory, it did reveal the flag.
+
+flag{if_you_can_read_this_you_cant_stop_wont_stop}
