@@ -1,0 +1,12 @@
+Note that the problem was broken due to image compression on image uploading sites.
+
+We can reverse search the png for an image of the same size, which leads us to the only result:
+https://hoydic.files.wordpress.com/2015/09/sports.jpg
+
+The original image is a jpg, but we are given a png. Using an online tool like http://image.online-convert.com/convert-to-png,
+we can convert the jpg into a png and compare the difference between the photos.
+
+    $ compare original-converted.png Sports.png -compose src diff.png
+
+Open up diff.png to see the flag:
+flag{S0cc3r_1s_d@_b0mb}
