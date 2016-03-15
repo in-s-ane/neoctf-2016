@@ -1,0 +1,3 @@
+strings spook.exe | grep "flag{"
+
+flag{sp00000000000kie_crisp}
