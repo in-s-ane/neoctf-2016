@@ -1,0 +1,7 @@
+Note:
+The problem was broken until 3/16, and although I added the key manually before searching, its possible that it was already there to begin with.
+
+We are given a pgp public key block, so let's try looking it up on https://pgp.mit.edu.
+If we search up "flag" on the server, we find a nice pgp key with a user id containing the flag.
+
+flag{Pretty_Good_Plaid_Parliament_Of_Pwning}
