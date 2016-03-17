@@ -1,0 +1,4 @@
+Clicking on the logo in the center redirects you to another page with the flag in plain sight.
+http://162.243.0.171/stupidlylongnamesoyoucantguessithopefullythisworkslol.html
+
+flag{i_wish_this_w@s_m3_RIP}
