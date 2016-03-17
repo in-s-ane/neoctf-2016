@@ -1,0 +1,11 @@
+Looking at the project on jsfiddle, we find near the bottom some information about the creator.
+
+Templar Template Knights
+Oye m8 42 wallaby way Berlin Germany
+Telephone: (641) 715-3900 ext 288115#
+International E-mail: ne00@mailinator.com
+
+Looking at their mailinator mailbox revealed nothing, but calling the number with the extension leads us to a
+voicemail telling us the flag.
+
+flag{call_me_maybe_never}
