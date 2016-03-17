@@ -1,0 +1,19 @@
+Running exiftool on helicopter.gif reveals a base64 encoded comment.
+
+    ...
+    Comment                         : E1WwMH0lBT1RE09XFIIWL28jL1MkFH1WExceoRLmrGWRZzgQJatkZxplH2gTZKR1pSIAD25Fn1uhZ01nEwSAZUOYL0MkIIAMFGA5naSgqGOiZyAJGKyAFT4ln0Skq0HjE0qJZHSIGmWUZyAeEwNkAxcYGHAiF1qLDHqCoSbjBQSXq1p1o1IKJRSYFJcTE3ywE0ukD01Fn1uUHKIOpauGLaOGH09jZwufEyEwnUW5DGMjZRD5D0D9CD==
+    ...
+
+After trying repeatedly to decode the base64, I realized that rot13-ing the string then
+base64 decoding it would reveal more base64.
+
+Keep rot13-ing and decoding the base64 until there is some legible text.
+
+    almost home! uryyb? vf gurer nalbar va urer? nu, lrf. gnxr guvf. synt{py3irynaq_oe0jaf<fcnp3_oe0jaf}
+
+Another rot-13 will reveal the flag.
+The final payload becomes:
+
+    $ python -c 'print "E1WwMH0lBT1RE09XFIIWL28jL1MkFH1WExceoRLmrGWRZzgQJatkZxplH2gTZKR1pSIAD25Fn1uhZ01nEwSAZUOYL0MkIIAMFGA5naSgqGOiZyAJGKyAFT4ln0Skq0HjE0qJZHSIGmWUZyAeEwNkAxcYGHAiF1qLDHqCoSbjBQSXq1p1o1IKJRSYFJcTE3ywE0ukD01Fn1uUHKIOpauGLaOGH09jZwufEyEwnUW5DGMjZRD5D0D9CD==".encode("rot13").decode("base64").encode("rot13").decode("base64").encode("rot13").decode("base64").decode("rot13")'
+
+flag{cl3veland_br0wns<spac3_br0wns}
