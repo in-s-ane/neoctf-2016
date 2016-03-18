@@ -22,20 +22,19 @@ def encrypt(string, k1, k2):
             k2 += 1
     return enc
 
-for x in range(len(enc)):
-    for letter in alphabet:
-        candidate = flag + letter
-        if encrypt(candidate, k1, k2) == enc[:len(candidate)]:
-            flag = candidate
-            break
-print flag
+# for x in range(len(enc)):
+#     for letter in alphabet:
+#         candidate = flag + letter
+#         if encrypt(candidate, k1, k2) == enc[:len(candidate)]:
+#             flag = candidate
+#             break
+# print flag
 
-# for letter in alphabet:
-#     candidate = "flag{@5k" + letter
-#     if encrypt(candidate, k1, k2) == "nukr{JAxh":
-#         flag = candidate
-#         print letter
-#         print candidate
-#         break
+for letter in alphabet:
+    candidate = "flag{@5k" + letter
+    if encrypt(candidate, k1, k2) == "nukr{JAx":
+        flag = candidate
+        print candidate
+        break
 
 # print flag

@@ -1,8 +1,9 @@
 We are given three strings that probably represents the flag. Given the name of the problem,
 it was clear that these three strings were encoded in different bases.
-Indeed, the first string was encoded in base64 and yields "flag{"
-The second string was encoded in base32 and yields "b@se_="
-The final string was just a bunch of hex, and yields "captured}"
+
+ZmxhZ3s= -> "flag{" (base64)
+MJAHGZK7HU====== -> "b@se_=" (base32)
+63 61 70 74 75 72 65 64 7d -> "captured}" (hex aka base 16)
 
 Combine the strings to make the flag
 

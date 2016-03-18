@@ -1,6 +1,5 @@
-The vault array seems rather suspicious, so maybe its ascii encoded in hex. Running ./source
-will output the contents of the array and if we decode that from hex, we can vaguely form the flag
-from the visible ascii.
+The vault array seems rather suspicious, since it seems to be a bunch hex-encoded ascii. Modifying
+the program to print out the ascii representation of the array will reveal the flag.
 
 "||====================================================================||\n||//$\\\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\//$\\\\||\n||(100)==================| RESERVE BANK OF NEO  |================(100)||\n||\\\\$//        ~         '------========--------'                \\\\$//||\n||<< /        /$\\              // ____ \\\\                         \\ >>||\n||>>|        //L\\\\            // ///..) \\\\              XXXX       |<<||\n||<<|        \\\\ //           || <||  >\\  ||                        |>>||\n||>>|         \\$/            ||  $$ --/  ||          XXXXXXXXX     |<<||\n||<<|     Free to Use        *\\\\  |\\_/  //*                        |>>||\n||>>|                         *\\\\/___\\_//*                         |<<||\n||<<\\      Rating: E     _____/ F LAG{HI_\\________    XX XXXXX     />>||\n||//$\\                 ~|    REPUBLIC_OF_NEO}A_  |~               /$\\\\||\n||(100)===================   ONE HUNDRED RUPEES =================(100)||\n||\\\\$//\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\\\$//||\n||====================================================================||\n\x00"
 

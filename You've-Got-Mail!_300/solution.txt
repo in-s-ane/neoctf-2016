@@ -1,3 +1,4 @@
 Look up the neoctf mailbox on mailinator.
+https://mailinator.com/inbox2.jsp?public_to=neoctf#/#public_maildirdiv
 
 flag{b!nkmail_1s_pretty_1337}

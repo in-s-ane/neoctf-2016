@@ -1,0 +1,5 @@
+The easiest way to find the necessary value for b is to brute force it.
+
+$ g++ Brute.cpp -o Brute
+$ ./Brute
+5164

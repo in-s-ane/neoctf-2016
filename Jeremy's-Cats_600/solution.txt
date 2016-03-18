@@ -1,11 +1,12 @@
-Looking up tomcat vulnerabilities, we find an exploit involving .war files by uploading them
+Looking up Apache Tomcat vulnerabilities, we find an exploit involving .war files by uploading them
 to the server. However, to do this, we need to log in to the admin interface. Using metasploit's
-built-in tomcat manager cracker, we find that the credentials are admin:password.
+built-in tomcat manager cracker (tomcat_mgr_deploy), we find that the credentials are admin:password.
 
-I also found a .war file online which would allow us to execute commands on the server. See cmd.war
+I also found a .war file online which would allow us to execute commands on the server.
+Upload cmd.war to the server and go to /cmd/cmd.jsp to execute commands.
 
-Immediately, we see /flag.txt, but it's only visible by root.
-cat, tail, head, and more don't work, but the command moar does.
+Immediately, we see /flag.txt, but only the root user can see its contents.
+The commands cat, tail, head, and more don't work, but moar does.
 
 $ ./shell.sh
 $ moar /flag.txt

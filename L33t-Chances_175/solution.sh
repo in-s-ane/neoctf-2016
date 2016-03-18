@@ -1,10 +1,10 @@
 #!/bin/bash
 
 while :; do
-    response=$(curl http://162.243.0.171/secret.php)
-    if grep "^flag" <(echo $response); then
+    response=$(curl -s http://162.243.0.171/secret.php)
+    if grep "^flag" <(echo $response) > /dev/null; then
         echo "Got the flag!"
-        echo $response
+        echo $response | grep -o "flag{.*}"
         break
     else
         echo "Trying again..."

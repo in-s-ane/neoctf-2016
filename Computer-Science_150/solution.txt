@@ -1,5 +1,5 @@
-The name of the school that's hosting the competition is Brecksville Broadview Heights High School
-Since https://ratemyteachers.com is the *most* reliable source for finding ratings of a teacher on the internet,
+The name of the school that's hosting the competition is Brecksville Broadview Heights High School, and
+since https://ratemyteachers.com is the *most* reliable source for finding ratings of a teacher on the internet,
 we can go find the computer science teachers who teach at the school.
 http://www.ratemyteachers.com/brecksville-broadview-heights-high-school/14788-s/computer-science
 

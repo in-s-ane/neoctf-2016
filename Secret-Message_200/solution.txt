@@ -1,5 +1,6 @@
-Looking at the function being called upon receiving data, we can tell right away that it is converting invalid
-hexadecimal into valid hexadecimal. All we really need to do is view the converted string and decode the hex to get the flag.
+Looking at the function being called upon receiving data, we can tell right away
+that it is removing invalid hexadecimal characters. All we really need to do is view the
+converted string and decode the hex to get the flag.
 
     var xm = new XMLHttpRequest();
 

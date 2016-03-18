@@ -4,4 +4,12 @@ The problem was broken until 3/16, and although I added the key manually before 
 We are given a pgp public key block, so let's try looking it up on https://pgp.mit.edu.
 If we search up "flag" on the server, we find a nice pgp key with a user id containing the flag.
 
+An alternate solution that doesn't require the use of the internet is to import the key manually.
+
+$ gpg --import pgp.txt
+
+gpg: key B8668560: public key "flag{Pretty_Good_Plaid_Parliament_Of_Pwning <pgp@neoctf.com>" imported
+gpg: Total number processed: 1
+gpg:               imported: 1  (RSA: 1)
+
 flag{Pretty_Good_Plaid_Parliament_Of_Pwning}
