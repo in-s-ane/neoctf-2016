@@ -1,0 +1,3 @@
+Look up the neoctf mailbox on mailinator.
+
+flag{b!nkmail_1s_pretty_1337}
