@@ -1,0 +1,4 @@
+If we google "drybones3363 trump", we find a liked video from Adam called "The Trump Dance (How to Video)"
+In the description, we find the flag.
+
+Flag{makethembuildtheirownwall}
