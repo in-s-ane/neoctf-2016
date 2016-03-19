@@ -6,9 +6,14 @@ I also found a .war file online which would allow us to execute commands on the 
 Upload cmd.war to the server and go to /cmd/cmd.jsp to execute commands.
 
 Immediately, we see /flag.txt, but only the root user can see its contents.
-The commands cat, tail, head, and more don't work, but moar does.
+The commands cat, tail, head, and more don't work, but a little bit of investigation
+reveals that a binary in /usr/bin/moar actually runs as root and that it just runs cat.
+With this information, we can read the flag.
 
 $ ./shell.sh
+$ moar --help
+Usage: cat [OPTION]... [FILE]...
+...
 $ moar /flag.txt
 
 flag{really_gud_password_but_wait_theres_moar}
