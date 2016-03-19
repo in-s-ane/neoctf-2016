@@ -1,0 +1,13 @@
+We cannot view the file as a doc, because it is actually a zipped archive.
+
+Unzipping the archive gives us contents similar to an Apple pages document, but that doesn't matter.
+Viewing preview.jpg gives us the contents of the document, and we notice a strange string.
+
+    jr;[ ,r@@@ nrgptr o hp. jrtr od yjr f;sh" g;sh)f4s4+yu[2mh|
+
+It turns out that this string was encrypted via keyboard shifting. If we shift all the keys to the
+left by one, we get decode the message and get the flag.
+
+    help me!!! before i go. here is the flag: flag{d3a3_typ1ng}
+
+flag{d3a3_typ1ng}
